@@ -1,11 +1,7 @@
 /* ---- reset ---- */
-body {
-  margin: 0;
-  font: normal 75% Arial, Helvetica, sans-serif;
-}
+
 canvas {
   display: block;
-  vertical-align: bottom;
 } /* ---- particles.js container ---- */
 #particles-js {
   position: absolute;
@@ -37,7 +33,6 @@ canvas {
 }
 #stats,
 .count-particles {
-  -webkit-user-select: none;
   margin-top: 5px;
   margin-left: 5px;
 }
