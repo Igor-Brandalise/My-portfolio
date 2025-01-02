@@ -1,7 +1,7 @@
 particlesJS("particles-js", {
   particles: {
-    number: { value: 80, density: { enable: true, value_area: 800 } },
-    color: { value: "#ff0000" },
+    number: { value: 100, density: { enable: true, value_area: 800 } },
+    color: { value: "#f70000" },
     shape: {
       type: "circle",
       stroke: { width: 0, color: "#000000" },
@@ -9,7 +9,7 @@ particlesJS("particles-js", {
       image: { src: "img/github.svg", width: 100, height: 100 },
     },
     opacity: {
-      value: 0.5,
+      value: 0.5692112816072606,
       random: false,
       anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
     },
@@ -20,14 +20,14 @@ particlesJS("particles-js", {
     },
     line_linked: {
       enable: true,
-      distance: 176.3753266952075,
-      color: "#ff0000",
-      opacity: 0.34,
-      width: 1.4430708547789706,
+      distance: 160.3412060865523,
+      color: "#fc0000",
+      opacity: 0.4489553770423464,
+      width: 1.603412060865523,
     },
     move: {
       enable: true,
-      speed: 5,
+      speed: 6,
       direction: "none",
       random: false,
       straight: false,
