@@ -5,7 +5,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  z-index: 100;
 }
+
+
 
 header {
   display: flex;
@@ -50,4 +53,60 @@ a {
 
 a:hover {
   color: purple;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  padding: 9.5em;
+  padding-top: 11em;
+}
+
+#text{
+    flex-direction: column;
+}
+
+h1 {
+  font-size: 4.2em;
+  font-weight: 700;
+}
+
+#name {
+  color: red;
+}
+
+h2 {
+  padding-top: 1em;
+  font-weight: 400;
+}
+
+p {
+  max-width: 40em;
+  padding-top: 2em;
+}
+
+#download{
+  margin-top: 2em;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.2em;
+  width: 7.8em;
+  height: 2.5em;
+  font-size: 1em;
+}
+
+
+
+img {
+    padding-left: 15em;
+  text-align: right;
+}
+main, header {
+    pointer-events: none; /* Permite que os eventos de mouse passem */
+}
+
+nav a, button {
+    pointer-events: auto; /* Mantém links e botões clicáveis */
 }
