@@ -7,8 +7,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-
-
 header {
   display: flex;
   justify-content: space-between;
@@ -24,14 +22,14 @@ header {
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.349);
 }
 
-h1 {
+#nome {
   align-items: center;
   color: black;
   font-size: 1.5em;
   padding-left: 5em;
 }
 
-#branda {
+#sobrenome {
   color: red;
 }
 
@@ -53,5 +51,3 @@ a {
 a:hover {
   color: purple;
 }
-
-
