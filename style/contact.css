@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 4em;
+  position: fixed;
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  border-bottom: 0.5px solid rgba(22, 22, 22, 0.123);
+}
+
+#nome {
+  align-items: center;
+  color: black;
+  font-size: 1.5em;
+  padding-left: 5em;
+  font-weight: 700;
+}
+
+#sobrenome {
+  color: red;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  padding-right: 8em;
+}
+
+.nav_link {
+  display: flex;
+  gap: 1em;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.5s;
+  font-weight: 600;
+}
+
+a:hover{
+  color: purple;
+}
+
+main,
+header {
+  pointer-events: none; /* Permite que os eventos de mouse passem */
+}
+
+nav a,
+button,
+header a {
+  pointer-events: auto; /* Mantém links e botões clicáveis */
+}
+
+#a{
+    background-color: aqua;
+    z-index: 1000;
+}
