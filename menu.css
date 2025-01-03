@@ -27,10 +27,11 @@
     .nav_link.show {
       display: flex; /* Exibe os itens quando a classe 'show' é ativada */
       flex-direction: column;
-      background: rgba(255, 255, 255, 0.9);
+      background: rgb(252, 252, 252);
       position: absolute;
       top: 4em;
       right: 1em;
+      width: 10em;
       padding: 1em;
       border: 1px solid #ccc;
       border-radius: 8px;
