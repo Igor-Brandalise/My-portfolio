@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="particles.css">
+    <link rel="stylesheet" href="/background/particles.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/icons8-portfólio-16.png" type="image/x-icon">
 </head>
 
 <body>
@@ -14,15 +15,16 @@
 
     <header>
 
-        <a href="index.html">
-            <section id="nome">&lt;Igor <span id="sobrenome">Brandalise/&gt;</span></section>
-        </a>
+        <section id="nome"><a href="index.html">&lt;Igor <span id="sobrenome">Brandalise/&gt;</span></a></section>
 
         <nav>
-            <a href="#">About me</a>
-            <a href="#">Skills</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <button class="hamburger"></button>
+            <ul class="nav_link">
+                <li class="nav"> <a href="#">About me</a> </li>
+                <li class="nav"> <a href="#">Skills</a> </li>
+                <li class="nav"> <a href="#">Projects</a> </li>
+                <li class="nav"> <a href="#">Contact</a> </li>
+            </ul>
         </nav>
 
     </header>
@@ -54,7 +56,7 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="particles.js"></script>
+    <script src="/background/particles.js"></script>
 </body>
 
 </html>

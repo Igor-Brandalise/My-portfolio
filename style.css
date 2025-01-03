@@ -8,8 +8,6 @@
   z-index: 100;
 }
 
-
-
 header {
   display: flex;
   justify-content: space-between;
@@ -39,10 +37,18 @@ header {
 nav {
   display: flex;
   align-items: center;
-  gap: 1em;
   font-size: 1em;
   padding-right: 8em;
 }
+
+.nav_link{
+  display: flex;
+  gap: 1em;
+  list-style-type: none
+
+}
+
+
 
 a {
   text-decoration: none;
@@ -58,12 +64,13 @@ a:hover {
 main {
   display: flex;
   align-items: center;
-  padding: 9.5em;
+  
   padding-top: 11em;
+  padding-left: 8.1em;
 }
 
-#text{
-    flex-direction: column;
+#text {
+  flex-direction: column;
 }
 
 h1 {
@@ -85,7 +92,7 @@ p {
   padding-top: 2em;
 }
 
-#download{
+#download {
   margin-top: 2em;
   background-color: black;
   color: white;
@@ -97,16 +104,16 @@ p {
   font-size: 1em;
 }
 
-
-
 img {
-    padding-left: 15em;
+  padding-left: 15em;
   text-align: right;
 }
-main, header {
-    pointer-events: none; /* Permite que os eventos de mouse passem */
+main,
+header {
+  pointer-events: none; /* Permite que os eventos de mouse passem */
 }
 
-nav a, button {
-    pointer-events: auto; /* Mantém links e botões clicáveis */
+nav a,
+button {
+  pointer-events: auto; /* Mantém links e botões clicáveis */
 }
