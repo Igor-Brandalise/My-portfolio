@@ -27,6 +27,7 @@ header {
   color: black;
   font-size: 1.5em;
   padding-left: 5em;
+  font-weight: 700;
 }
 
 #sobrenome {
@@ -108,6 +109,7 @@ header {
 nav a,
 button,
 #logos,
+#menu-icon,
 header a {
   pointer-events: auto; /* Mantém links e botões clicáveis */
 }
@@ -119,9 +121,52 @@ header a {
   background-color: #e5e7eb;
   height: 25em;
   width: 6em;
+  margin: 1em;
   padding-top: 2.5em;
   text-align: right;
   margin-left: 8em;
   border-radius: 60px;
   gap: 1.5em;
+}
+
+@media (max-width: 1200px) {
+  #logos {
+    transform: scale(0);
+  }
+}
+
+
+
+@media (max-width: 800px) {
+  #nome {
+    padding-left: 1em;
+    font-size: 1em;
+  }
+
+  main {
+    flex-direction: column;
+    padding-top: 6em;
+    padding-left: 1.8em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    padding-top: 1em;
+  }
+
+  P {
+    min-width: 20em;
+    padding-top: 1em;
+    font-weight: 500;
+  }
+
+  #img1{
+    max-width: 100px;
+    text-align: center;
+  }
+
+
 }
