@@ -16,21 +16,75 @@ header {
   width: 100%;
   height: 4em;
   position: fixed;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(6px);
   z-index: 1000;
-  border-bottom: 0.5px solid rgba(22, 22, 22, 0.123);
+  border-bottom: 0.5px solid rgba(252, 252, 252, 0.123);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  z-index: 1;
+}
+
+/* Estilização básica */
+.nav_link {
+  list-style: none;
+  display: flex;
+  gap: 10em;
+  padding: 0;
+}
+
+.nav a {
+  color: #fafaf9;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 400;
+  position: relative; /* Necessário para posicionar o pseudo-elemento */
+  transition: color 0.5s ease; /* Suaviza a mudança de cor do texto */
+}
+
+.nav a:hover {
+  color: rgb(255, 0, 0);
+  /* Altera a cor do texto ao passar o mouse */
+}
+
+/* Criando a linha animada */
+.nav a::after {
+  content: ""; /* Necessário para pseudo-elementos */
+  position: absolute;
+  bottom: -5px; /* Posiciona a linha logo abaixo do texto */
+  left: 50%; /* Começa do centro */
+  width: 0; /* A largura inicial é 0 */
+  height: 2px; /* Define a espessura da linha */
+  background-color: rgb(255, 255, 255); /* Cor da linha */
+  transition: all 0.4s ease; /* Suaviza a animação */
+  transform: translateX(-50%); /* Centraliza o ponto inicial da linha */
+}
+
+.nav a:hover::after {
+  width: 100%; /* Expande a linha até as bordas */
 }
 
 #nome {
   align-items: center;
-  color: black;
-  font-size: 1.5em;
+  color: #fafaf9;
+  font-size: 1.7em;
   padding-left: 5em;
   font-weight: 700;
 }
 
 #sobrenome {
   color: red;
+}
+
+a {
+  text-decoration: none;
 }
 
 nav {
@@ -44,20 +98,12 @@ nav {
   display: flex;
   gap: 1em;
   list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  transition: color 0.5s;
-  font-weight: 600;
-}
-
-a:hover{
-  color: purple;
+  gap: 2em;
 }
 
 main {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   position: fixed;
@@ -68,6 +114,7 @@ main {
 h1 {
   font-size: 4.2em;
   font-weight: 700;
+  color: #fafaf9;
 }
 
 #name {
@@ -77,17 +124,20 @@ h1 {
 h2 {
   padding-top: 1em;
   font-weight: 400;
+  color: #fafaf9;
 }
 
 p {
+  color: #fafaf9;
   max-width: 40em;
   padding-top: 2em;
+  text-indent: 0.3em;
 }
 
 #download {
   margin-top: 2em;
-  background-color: black;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 5px;
   padding: 0.2em;
@@ -134,9 +184,7 @@ header a {
   }
 }
 
-
-
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   #nome {
     padding-left: 1em;
     font-size: 1em;
@@ -161,13 +209,19 @@ header a {
     padding-top: 1em;
     font-weight: 500;
   }
-
-  #img1{
-    max-width: 100px;
-    text-align: center;
-  }
-
-
 }
 
+@media (max-width: 720px) {
+  #img1 {
+    height: auto; /* Remove a altura fixa para se ajustar ao conteúdo */
+    padding: 1em;
+    margin-top: 1em; /* Adiciona um pequeno padding */
+  }
 
+  #img1 img {
+    width: 100%; /* Ajusta a largura da imagem para 80% da largura da tela */
+    height: auto; /* Mantém a proporção da imagem */
+    width: 150px;
+    height: 150px;
+  }
+}
