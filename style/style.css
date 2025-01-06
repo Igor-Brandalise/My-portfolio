@@ -32,7 +32,7 @@ body {
   z-index: 1;
 }
 
-/* Estilização básica */
+
 .nav_link {
   list-style: none;
   display: flex;
@@ -45,30 +45,30 @@ body {
   text-decoration: none;
   font-size: 1em;
   font-weight: 400;
-  position: relative; /* Necessário para posicionar o pseudo-elemento */
-  transition: color 0.5s ease; /* Suaviza a mudança de cor do texto */
+  position: relative;
+  transition: color 0.5s ease;
 }
 
 .nav a:hover {
   color: rgb(255, 0, 0);
-  /* Altera a cor do texto ao passar o mouse */
+ 
 }
 
-/* Criando a linha animada */
+
 .nav a::after {
-  content: ""; /* Necessário para pseudo-elementos */
+  content: ""; 
   position: absolute;
-  bottom: -5px; /* Posiciona a linha logo abaixo do texto */
-  left: 50%; /* Começa do centro */
-  width: 0; /* A largura inicial é 0 */
-  height: 2px; /* Define a espessura da linha */
-  background-color: rgb(255, 255, 255); /* Cor da linha */
-  transition: all 0.4s ease; /* Suaviza a animação */
-  transform: translateX(-50%); /* Centraliza o ponto inicial da linha */
+  bottom: -5px; 
+  left: 50%;
+  width: 0; 
+  height: 2px; 
+  background-color: rgb(255, 255, 255); 
+  transition: all 0.4s ease; 
+  transform: translateX(-50%); 
 }
 
 .nav a:hover::after {
-  width: 100%; /* Expande a linha até as bordas */
+  width: 100%; 
 }
 
 #nome {
@@ -213,14 +213,14 @@ header a {
 
 @media (max-width: 720px) {
   #img1 {
-    height: auto; /* Remove a altura fixa para se ajustar ao conteúdo */
+    height: auto; 
     padding: 1em;
-    margin-top: 1em; /* Adiciona um pequeno padding */
+    margin-top: 1em;
   }
 
   #img1 img {
-    width: 100%; /* Ajusta a largura da imagem para 80% da largura da tela */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 100%;
+    height: auto; 
     width: 150px;
     height: 150px;
   }
