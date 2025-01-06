@@ -16,21 +16,75 @@ header {
   width: 100%;
   height: 4em;
   position: fixed;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(6px);
   z-index: 1000;
-  border-bottom: 0.5px solid rgba(22, 22, 22, 0.123);
+  border-bottom: 0.5px solid rgba(252, 252, 252, 0.123);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  z-index: 1;
+}
+
+/* Estilização básica */
+.nav_link {
+  list-style: none;
+  display: flex;
+  gap: 10em;
+  padding: 0;
+}
+
+.nav a {
+  color: #fafaf9;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 400;
+  position: relative; /* Necessário para posicionar o pseudo-elemento */
+  transition: color 0.5s ease; /* Suaviza a mudança de cor do texto */
+}
+
+.nav a:hover {
+  color: rgb(255, 0, 0);
+  /* Altera a cor do texto ao passar o mouse */
+}
+
+/* Criando a linha animada */
+.nav a::after {
+  content: ""; /* Necessário para pseudo-elementos */
+  position: absolute;
+  bottom: -5px; /* Posiciona a linha logo abaixo do texto */
+  left: 50%; /* Começa do centro */
+  width: 0; /* A largura inicial é 0 */
+  height: 2px; /* Define a espessura da linha */
+  background-color: rgb(255, 255, 255); /* Cor da linha */
+  transition: all 0.4s ease; /* Suaviza a animação */
+  transform: translateX(-50%); /* Centraliza o ponto inicial da linha */
+}
+
+.nav a:hover::after {
+  width: 100%; /* Expande a linha até as bordas */
 }
 
 #nome {
   align-items: center;
-  color: black;
-  font-size: 1.5em;
+  color: #fafaf9;
+  font-size: 1.7em;
   padding-left: 5em;
   font-weight: 700;
 }
 
 #sobrenome {
   color: red;
+}
+
+a {
+  text-decoration: none;
 }
 
 nav {
@@ -44,31 +98,79 @@ nav {
   display: flex;
   gap: 1em;
   list-style-type: none;
+  gap: 2em;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-  transition: color 0.5s;
-  font-weight: 600;
-}
-
-a:hover{
-  color: purple;
-}
 
 main,
 header {
   pointer-events: none; /* Permite que os eventos de mouse passem */
 }
 
+
+main a,
 nav a,
-button,
+#menu-icon,
 header a {
   pointer-events: auto; /* Mantém links e botões clicáveis */
 }
 
-#a{
-    background-color: aqua;
-    z-index: 1000;
+main {
+  position: relative;
+  z-index: 1000;
+  display: flex; /* Habilita o layout flex */
+  flex-direction: column; /* Organiza os itens em coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  height: 100vh; /* Ocupa toda a altura da tela */
+  gap: 2em; /* Espaçamento entre os botões */
+}
+
+/* Estilo para os botões e imagens */
+.table {
+  display: flex;
+  justify-content: center; /* Alinha a imagem dentro do botão */
+  align-items: center; /* Alinha a imagem dentro do botão */
+  width: 35em; /* Largura do botão */
+  height: 4em; /* Altura do botão */
+  background-color: rgba(0, 0, 0, 0.5); /* Cor do botão */
+  backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 0, 0, 0.432);
+  border-radius: 10px;
+  color: white;
+}
+
+#dl{
+  color: aqua#fafaf9;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.table img {
+  width: 50px; /* Largura da imagem */
+  height: 50px; /* Altura da imagem */
+}
+
+
+@media(max-width: 905px){
+  
+  #nome{
+    padding-left: 2em;
+  }
+  
+  .table{
+    width: 30em;
+  }
+
+}
+
+@media(max-width: 600px){
+  #nome{
+    font-size: 1.4em;
+    padding-left: .5em;
+  }
+  
+  .table{
+    width: 25em;
+  }
 }
