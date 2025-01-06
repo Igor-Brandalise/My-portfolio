@@ -44,26 +44,24 @@ body {
   text-decoration: none;
   font-size: 1em;
   font-weight: 400;
-  position: relative; 
-  transition: color 0.5s ease; 
+  position: relative;
+  transition: color 0.5s ease;
 }
 
 .nav a:hover {
   color: rgb(255, 0, 0);
- 
 }
 
-
 .nav a::after {
-  content: ""; 
+  content: "";
   position: absolute;
-  bottom: -5px; 
-  left: 50%; 
-  width: 0; 
-  height: 2px; 
-  background-color: rgb(255, 255, 255); 
-  transition: all 0.4s ease; 
-  transform: translateX(-50%); 
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
 }
 
 .nav a:hover::after {
@@ -100,12 +98,10 @@ nav {
   gap: 2em;
 }
 
-
 main,
 header {
   pointer-events: none; /* Permite que os eventos de mouse passem */
 }
-
 
 main a,
 nav a,
@@ -117,59 +113,93 @@ header a {
 main {
   position: relative;
   z-index: 1000;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   height: 100vh;
   gap: 2em;
 }
 
+/* Animação ajustada para ser mais lenta */
+main a {
+  opacity: 0; /* Inicialmente invisível */
+  transform: translateY(20px); /* Posicionado ligeiramente fora do lugar */
+  animation: fadeIn 0.8s ease-out forwards; /* Duração ajustada para 0.8s */
+}
+
+main a:nth-child(1) {
+  animation-delay: 0s; /* Primeiro botão */
+}
+
+main a:nth-child(2) {
+  animation-delay: 0.3s; /* Segundo botão */
+}
+
+main a:nth-child(3) {
+  animation-delay: 0.6s; /* Terceiro botão */
+}
+
+main a:nth-child(4) {
+  animation-delay: 0.9s; /* Quarto botão */
+}
+
+main a:nth-child(5) {
+  animation-delay: 1.2s; /* Quinto botão */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .table {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  width: 35em; 
-  height: 4em; 
-  background-color: rgba(0, 0, 0, 0.5); 
+  justify-content: center;
+  align-items: center;
+  width: 35em;
+  height: 4em;
+  background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(1px);
   border: 1px solid rgba(255, 0, 0, 0.432);
   border-radius: 10px;
   color: white;
 }
 
-#dl{
+#dl {
   color: aqua#fafaf9;
   font-size: 1.5em;
   font-weight: 500;
 }
 
 .table img {
-  width: 50px; 
-  height: 50px; 
+  width: 50px;
+  height: 50px;
 }
 
-
-@media(max-width: 905px){
-  
-  #nome{
+@media (max-width: 905px) {
+  #nome {
     padding-left: 2em;
   }
-  
-  .table{
+
+  .table {
     width: 30em;
   }
-
 }
 
-@media(max-width: 600px){
-  #nome{
+@media (max-width: 600px) {
+  #nome {
     font-size: 1.4em;
-    padding-left: .5em;
+    padding-left: 0.5em;
   }
-  
-  .table{
+
+  .table {
     width: 25em;
   }
 }
