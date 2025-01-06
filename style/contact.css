@@ -98,7 +98,8 @@ nav {
   gap: 2em;
 }
 
-
+.table,
+img,
 main,
 header {
   pointer-events: none; /* Permite que os eventos de mouse passem */
