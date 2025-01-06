@@ -32,7 +32,6 @@ body {
   z-index: 1;
 }
 
-/* Estilização básica */
 .nav_link {
   list-style: none;
   display: flex;
@@ -45,30 +44,30 @@ body {
   text-decoration: none;
   font-size: 1em;
   font-weight: 400;
-  position: relative; /* Necessário para posicionar o pseudo-elemento */
-  transition: color 0.5s ease; /* Suaviza a mudança de cor do texto */
+  position: relative; 
+  transition: color 0.5s ease; 
 }
 
 .nav a:hover {
   color: rgb(255, 0, 0);
-  /* Altera a cor do texto ao passar o mouse */
+ 
 }
 
-/* Criando a linha animada */
+
 .nav a::after {
-  content: ""; /* Necessário para pseudo-elementos */
+  content: ""; 
   position: absolute;
-  bottom: -5px; /* Posiciona a linha logo abaixo do texto */
-  left: 50%; /* Começa do centro */
-  width: 0; /* A largura inicial é 0 */
-  height: 2px; /* Define a espessura da linha */
-  background-color: rgb(255, 255, 255); /* Cor da linha */
-  transition: all 0.4s ease; /* Suaviza a animação */
-  transform: translateX(-50%); /* Centraliza o ponto inicial da linha */
+  bottom: -5px; 
+  left: 50%; 
+  width: 0; 
+  height: 2px; 
+  background-color: rgb(255, 255, 255); 
+  transition: all 0.4s ease; 
+  transform: translateX(-50%); 
 }
 
 .nav a:hover::after {
-  width: 100%; /* Expande a linha até as bordas */
+  width: 100%;
 }
 
 #nome {
@@ -118,22 +117,22 @@ header a {
 main {
   position: relative;
   z-index: 1000;
-  display: flex; /* Habilita o layout flex */
-  flex-direction: column; /* Organiza os itens em coluna */
-  justify-content: center; /* Centraliza verticalmente */
-  align-items: center; /* Centraliza horizontalmente */
-  height: 100vh; /* Ocupa toda a altura da tela */
-  gap: 2em; /* Espaçamento entre os botões */
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+  gap: 2em;
 }
 
-/* Estilo para os botões e imagens */
+
 .table {
   display: flex;
-  justify-content: center; /* Alinha a imagem dentro do botão */
-  align-items: center; /* Alinha a imagem dentro do botão */
-  width: 35em; /* Largura do botão */
-  height: 4em; /* Altura do botão */
-  background-color: rgba(0, 0, 0, 0.5); /* Cor do botão */
+  justify-content: center; 
+  align-items: center; 
+  width: 35em; 
+  height: 4em; 
+  background-color: rgba(0, 0, 0, 0.5); 
   backdrop-filter: blur(1px);
   border: 1px solid rgba(255, 0, 0, 0.432);
   border-radius: 10px;
@@ -147,8 +146,8 @@ main {
 }
 
 .table img {
-  width: 50px; /* Largura da imagem */
-  height: 50px; /* Altura da imagem */
+  width: 50px; 
+  height: 50px; 
 }
 
 
