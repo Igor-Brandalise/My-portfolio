@@ -186,8 +186,8 @@ header a {
 
 @media (max-width: 900px) {
   #nome {
-    padding-left: 1em;
-    font-size: 1em;
+    padding-left: .7em;
+    font-size: 1.4em;
   }
 
   main {

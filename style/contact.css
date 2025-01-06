@@ -98,6 +98,7 @@ nav {
   gap: 2em;
 }
 
+
 main,
 header {
   pointer-events: none; /* Permite que os eventos de mouse passem */
@@ -164,7 +165,7 @@ main a:nth-child(5) {
   justify-content: center;
   align-items: center;
   width: 35em;
-  height: 4em;
+  height: 4.5em;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(1px);
   border: 1px solid rgba(255, 0, 0, 0.432);
@@ -179,6 +180,7 @@ main a:nth-child(5) {
 }
 
 .table img {
+  
   width: 50px;
   height: 50px;
 }

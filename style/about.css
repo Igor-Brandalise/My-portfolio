@@ -211,7 +211,7 @@ h3::before {
 
 @media(max-width: 870px){
     #nome{
-        padding-left: 1em;
+        padding-left: .9em;
         font-size: 1.4em;
     }
 
