@@ -21,16 +21,14 @@ header {
   border-bottom: 0.5px solid rgba(252, 252, 252, 0.123);
 }
 
-
-
 #particles-js {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; /* Certifica-se de que o particle.js cubra toda a tela */
-    z-index: -1; /* Coloca o particle.js atrás do conteúdo */
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Certifica-se de que o particle.js cubra toda a tela */
+  z-index: -1; /* Coloca o particle.js atrás do conteúdo */
+}
 
 html,
 body {
@@ -151,7 +149,6 @@ ul {
 }
 
 ul li {
-  
   display: flex;
   justify-content: center; /* Centraliza a imagem dentro do item */
   align-items: center;
@@ -164,9 +161,7 @@ ul li img {
   background-color: #09090b;
   height: 90px;
   width: 90px;
-
 }
-
 
 h2 {
   color: #fafaf9;
@@ -189,36 +184,34 @@ h4 span {
   font-weight: 900;
 }
 
-@media(max-width: 830px){
-    #nome{
-        padding-left: 1em;
-        font-size: 1.4em;
-    }
+@media (max-width: 830px) {
+  #nome {
+    padding-left: 1em;
+    font-size: 1.4em;
+  }
 
-    h1{
-        font-size: 2.5em;
-        padding-left: 1em;
-    }
+  h1 {
+    font-size: 2.5em;
+    padding-left: 1em;
+  }
 
-    main{
-        position:absolute;
-        padding: 2em;
-    }
+  main {
+    position: absolute;
+    padding: 2em;
+  }
 
-    #lang{
-        padding-top: 28em;
-        position: absolute;
-    }
+  #lang {
+    padding-top: 28em;
+    position: absolute;
+  }
 
-    h2{
-        font-size: 2em;
-        padding-left: 1em;
-    }
+  h2 {
+    font-size: 2em;
+    padding-left: 1em;
+  }
 
-    h4{
-        padding-bottom: 1em;
-        padding-left: 2.6em;
-    }
+  h4 {
+    padding-bottom: 1em;
+    padding-left: 2.6em;
+  }
 }
-
-
