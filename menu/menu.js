@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Alterna o ícone entre o menu e o "X"
     if (menuIcon.classList.contains("active")) {
-      menuIcon.innerHTML = '&#10005;'; // Exibe o "X"
+      menuIcon.innerHTML = "&#10005;"; // Exibe o "X"
     } else {
-      menuIcon.innerHTML = '&#9776;'; // Exibe o ícone do menu
+      menuIcon.innerHTML = "&#9776;"; // Exibe o ícone do menu
     }
   });
 });

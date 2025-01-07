@@ -107,6 +107,7 @@ nav {
   gap: 2em;
 }
 
+#lang,
 main,
 h1,
 h2,
@@ -143,14 +144,14 @@ main {
 
 ul {
   display: grid;
-  grid-template-columns: repeat(3, auto); /* 3 colunas */
+  grid-template-columns: repeat(3, auto);
   gap: 2em;
   list-style: none;
 }
 
 ul li {
   display: flex;
-  justify-content: center; /* Centraliza a imagem dentro do item */
+  justify-content: center;
   align-items: center;
 }
 

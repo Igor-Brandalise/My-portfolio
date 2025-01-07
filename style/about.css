@@ -200,7 +200,6 @@ h3 img {
   margin-left: 0.6em;
   width: 40px;
   height: 40px;
-  
 }
 
 h3::before {
@@ -209,29 +208,27 @@ h3::before {
   color: #fafaf9;
 }
 
-@media(max-width: 870px){
-    #nome{
-        padding-left: .9em;
-        font-size: 1.4em;
-    }
+@media (max-width: 870px) {
+  #nome {
+    padding-left: 0.9em;
+    font-size: 1.4em;
+  }
 
-    main{
-        padding-left: 2.2em;
-        padding-right: 1em;
-    }
+  main {
+    padding-left: 2.2em;
+    padding-right: 1em;
+  }
 
-    h1{
-        font-size: 2em;
-        padding-bottom: 1em;
-    }
+  h1 {
+    font-size: 2em;
+    padding-bottom: 1em;
+  }
 
-   section h2{
-        font-size: 2em;
-    }
+  section h2 {
+    font-size: 2em;
+  }
 
-    h3{
-        font-size: 1.5em;
-    }
-
-    
+  h3 {
+    font-size: 1.5em;
+  }
 }

@@ -1,60 +1,56 @@
 /* Estilo do ícone do menu */
 #menu-icon {
-    display: none;
-    font-size: 2em;
-    cursor: pointer;
-     color: #fafaf9;
-    z-index: 1100;
-    transition: transform 0.3s, color 0.3s; /* Transição suave para a troca de ícones */
-    outline: none; /* Remove o contorno de foco */
-    border: none; /* Remove qualquer borda */
-    user-select: none; /* Impede seleção do texto ou ícone */
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: #fafaf9;
+  z-index: 1100;
+  transition: transform 0.3s, color 0.3s; /* Transição suave para a troca de ícones */
+  outline: none; /* Remove o contorno de foco */
+  border: none; /* Remove qualquer borda */
+  user-select: none; /* Impede seleção do texto ou ícone */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 880px) {
+  #menu-icon {
+    display: block; /* Exibe o ícone do menu */
+    font-size: 1.5em;
   }
-  
-  /* Responsividade para telas menores */
-  @media (max-width: 880px) {
-    
-  
-    #menu-icon {
-      display: block; /* Exibe o ícone do menu */
-      font-size: 1.5em;
-    }
-  
-    .nav_link {
-      display: none; /* Mantém os itens escondidos por padrão */
-    }
-  
-    .nav_link.show {
-      display: flex; /* Exibe os itens quando a classe 'show' é ativada */
-      flex-direction: column;
-      background: rgb(0, 0, 0);
-      position: absolute;
-      top: 4em;
-      right: 1em;
-      width: 10em;
-      padding: 1em;
-      border: 1px solid #f01010;
-      border-radius: 8px;
-      z-index: 1000;
-    }
-  
-    /* Quando o menu está aberto, altera o ícone para "X" */
-    #menu-icon.active {
-      transform: rotate(90deg); /* Gira o ícone para simular um "X" */
-      color: red; /* Muda a cor para indicar que está ativo */
-    }
+
+  .nav_link {
+    display: none; /* Mantém os itens escondidos por padrão */
   }
-  
-  /* Remover o foco do ícone e outros elementos interativos */
-  #menu-icon:focus,
-  #menu-icon:active {
-    outline: none; /* Remove o contorno de foco */
-    box-shadow: none; /* Remove qualquer sombra de foco */
+
+  .nav_link.show {
+    display: flex; /* Exibe os itens quando a classe 'show' é ativada */
+    flex-direction: column;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    top: 4em;
+    right: 1em;
+    width: 10em;
+    padding: 1em;
+    border: 1px solid #f01010;
+    border-radius: 8px;
+    z-index: 1000;
   }
-  
-  button:focus,
-  a:focus {
-    outline: none; /* Remove o foco de links e botões */
+
+  /* Quando o menu está aberto, altera o ícone para "X" */
+  #menu-icon.active {
+    transform: rotate(90deg); /* Gira o ícone para simular um "X" */
+    color: red; /* Muda a cor para indicar que está ativo */
   }
-  
-  
+}
+
+/* Remover o foco do ícone e outros elementos interativos */
+#menu-icon:focus,
+#menu-icon:active {
+  outline: none; /* Remove o contorno de foco */
+  box-shadow: none; /* Remove qualquer sombra de foco */
+}
+
+button:focus,
+a:focus {
+  outline: none; /* Remove o foco de links e botões */
+}
