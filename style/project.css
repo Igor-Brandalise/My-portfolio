@@ -150,9 +150,8 @@ h2 {
 }
 
 h2 a {
-  text-decoration: underline;
-  color: #fafaf9; /* Cor inicial */
-  transition: color 0.3s ease; /* Transição suave de cor */
+  color: #fafaf9; 
+  transition: color 0.3s ease; 
 }
 
 h2 a:hover {
@@ -248,6 +247,7 @@ a p {
   }
 
   #pr {
+    width: 100%;
     flex-direction: column;
     gap: 1em;
     text-align: left;
@@ -261,7 +261,7 @@ a p {
 
   h2 {
     font-size: 1em;
-    padding-right: 16em;
+    padding-right: 15.5em;
   }
 
   main {
