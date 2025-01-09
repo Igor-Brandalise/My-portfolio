@@ -98,6 +98,7 @@ nav {
   gap: 2em;
 }
 
+span,
 .table,
 img,
 main,
@@ -167,15 +168,16 @@ main a:nth-child(5) {
   align-items: center;
   width: 35em;
   height: 4.5em;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.452);
   backdrop-filter: blur(1px);
   border: 1px solid rgba(255, 0, 0, 0.432);
   border-radius: 10px;
   color: white;
 }
 
+
 #dl {
-  color: aqua#fafaf9;
+  color: #fafaf9;
   font-size: 1.5em;
   font-weight: 500;
 }
