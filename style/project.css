@@ -241,6 +241,12 @@ a p {
 }
 
 @media (max-width: 810px) {
+
+  body{
+    height: 100%;
+    width: 100%;
+  }
+
   #nome {
     font-size: 1.4em;
     padding-left: 0.7em;
