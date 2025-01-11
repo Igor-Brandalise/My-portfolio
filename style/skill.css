@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+
 }
 
 header {
@@ -150,7 +151,7 @@ ul {
   list-style: none;
 }
 
-ul li {
+main ul li {
   display: flex;
   justify-content: center;
   align-items: center;
