@@ -33,7 +33,10 @@ header {
 html,
 body {
   height: 100%;
+  width: 100%;
   margin: 0;
+  overflow-x: hidden;
+
 }
 
 body {
@@ -44,7 +47,7 @@ body {
 .nav_link {
   list-style: none;
   display: flex;
-  gap: 10em;
+  gap: 2em;
   padding: 0;
 }
 
@@ -267,7 +270,7 @@ a p {
 
   h2 {
     font-size: 1em;
-    padding-right: 15.5em;
+    margin-right: 7.6em;
   }
 
   main {
