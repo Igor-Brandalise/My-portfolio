@@ -242,6 +242,9 @@ a p {
 
 @media (max-width: 810px) {
 
+  #menu-icon{
+    padding-right: 1em;
+  }
 
   #nome {
     font-size: 1.4em;
