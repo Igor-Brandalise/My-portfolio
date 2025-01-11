@@ -143,8 +143,12 @@ p {
   font-size: 1em;
 }
 
-#img1 {
+#img1{
   padding-left: 10em;
+}
+
+img{
+  clip-path: circle(50% at 50% 50%);
 }
 
 main,
@@ -213,13 +217,13 @@ header a {
   #img1 {
     height: auto;
     padding: 1em;
-    margin-top: 1em;
   }
 
   #img1 img {
     width: 100%;
     height: auto;
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
+    
   }
 }
