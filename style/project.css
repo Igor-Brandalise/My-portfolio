@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-
 }
 
 header {
@@ -37,7 +36,6 @@ body {
   width: 100%;
   margin: 0;
   overflow-x: hidden;
-
 }
 
 body {
@@ -154,8 +152,8 @@ h2 {
 }
 
 h2 a {
-  color: #fafaf9; 
-  transition: color 0.3s ease; 
+  color: #fafaf9;
+  transition: color 0.3s ease;
 }
 
 h2 a:hover {
@@ -245,7 +243,6 @@ a p {
 }
 
 @media (max-width: 810px) {
-
   .all a {
     width: 17em;
     height: 10em;
@@ -255,25 +252,30 @@ a p {
     font-size: 1.4em;
     padding-left: 0.7em;
   }
-  h1 {
-    font-size: 2em; 
-    padding-left: 1em; 
-    text-align: center; 
-  }
 
-  
   #pr {
+    width: 100%;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 1em; 
-    gap: 0.5em; 
+    gap: 1em;
+    text-align: left;
+    margin-left: 0em;
+    margin-top: 0em;
   }
 
-  
+  h1,
   h2 {
-    padding-right: 0; 
-    font-size: 1em; 
+    padding-left: 0.5em;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    margin-top: 0em;
+  }
+
+  #pr h2 {
+    font-size: 1em;
+    margin-top: 0.5em;
   }
 
   main {
@@ -286,4 +288,3 @@ a p {
     padding: 1.5em;
   }
 }
-
