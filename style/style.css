@@ -171,7 +171,7 @@ button,
 #logos,
 #menu-icon,
 header a {
-  pointer-events: auto; /* Mantém links e botões clicáveis */
+  pointer-events: all; /* Mantém links e botões clicáveis */
 }
 
 #logos {
@@ -217,9 +217,12 @@ header a {
   }
 
   P {
+    
     min-width: 20em;
-    padding-top: 1em;
+    padding-top: .5em;
     font-weight: 500;
+    margin-right: 1em;
+    
   }
 }
 
