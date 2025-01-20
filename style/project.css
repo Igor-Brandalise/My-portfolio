@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  
 }
 
 header {
@@ -33,10 +34,8 @@ header {
 
 html,
 body {
-  height: 100%;
-  width: 100%;
+  min-height: 100vh;
   margin: 0;
-
 }
 
 body {
@@ -169,6 +168,7 @@ main {
   justify-items: center;
   align-items: center;
   padding: 2em;
+  margin-bottom: 7em;
 }
 
 a p {
@@ -265,18 +265,14 @@ a p {
     margin-top: 0em;
   }
 
-  h1,
-  h2 {
-    padding-left: 0.5em;
-    margin: 0;
-  }
-
   h1 {
+    padding-left: 1em ;
     font-size: 2.5em;
     margin-top: 0em;
   }
 
   #pr h2 {
+    padding-right: 10.7em ;
     font-size: 1em;
     margin-top: 0.5em;
   }
