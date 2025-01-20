@@ -34,7 +34,7 @@ header {
 
 html,
 body {
-  height: 100%;
+  min-height: 100%;
   margin: 0;
 }
 
@@ -132,7 +132,7 @@ header a {
 h1 {
   color: #fafaf9;
   padding-left: 3.2em;
-  padding-top: 2.2em;
+  padding-top: 1em;
   font-size: 3em;
 }
 
@@ -164,6 +164,11 @@ ul li img {
   background-color: #09090b;
   height: 90px;
   width: 90px;
+}
+
+#lang{
+
+  margin-bottom: 6em;
 }
 
 h2 {
@@ -200,13 +205,13 @@ h4 span {
   }
 
   main {
-    position: absolute;
+    position: relative;
     padding: 2em;
   }
 
   #lang {
-    padding-top: 28em;
-    position: absolute;
+    margin-bottom: 6em;
+    
   }
 
   h2 {
