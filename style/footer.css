@@ -1,0 +1,39 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4em;
+    backdrop-filter: blur(6px);
+    color: #fafaf9;
+    border-top: 1px solid rgba(252, 252, 252, 0.123);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+#reserved{
+    margin-left: 2em ;
+
+  }
+
+  #icons{
+    margin-right: 2em;
+  }
+
+  footer a{
+    color: #fafaf9;
+    transition: color 0.3s ease;
+  }
+
+  footer a:hover{
+    color: red;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 300;
+  }
+  
