@@ -26,7 +26,7 @@ Este é o meu portfólio desenvolvido com **HTML, CSS e JavaScript**. O objetivo
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/portfolio.git
+git clone https://github.com/Igor-Brandalise/portfolio.git
 
 # Acesse a pasta do projeto
 cd portfolio
