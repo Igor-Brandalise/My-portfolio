@@ -157,7 +157,7 @@ main ul li {
   align-items: center;
 }
 
-ul li img {
+ul li img, svg {
   border-radius: 20px;
   padding: 1em;
   border: 1px solid #fafaf91e;
