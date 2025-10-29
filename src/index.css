@@ -1,1 +1,50 @@
 @import "tailwindcss";
+
+* { 
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --link-color: #fafaf9;
+  --link-hover-color: #ff0000;
+  --link-underline: #ffffff;
+}
+
+.border-b-custom {
+  border-bottom: 1px solid rgba(252, 252, 252, 0.123);
+}
+
+.blur-custom {
+  backdrop-filter: blur(6px);
+}
+
+.nav a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 400;
+  position: relative;
+  display: inline-block; /* <- isso é crucial */
+  transition: color 0.5s ease;
+}
+
+.nav a:hover {
+  color: var(--link-hover-color);
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* ajuste se precisar */
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--link-underline);
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
