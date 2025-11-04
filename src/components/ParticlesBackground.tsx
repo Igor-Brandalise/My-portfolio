@@ -14,28 +14,28 @@ export default function ParticlesBackground() {
 
   const options = {
     background: { color: { value: "#08080b" } }, // fundo escuro
-    fpsLimit: 3000,
+    fpsLimit: 500,
     interactivity: {
       events: {
         onHover: { enable: true, mode: "repulse" }, // interação com mouse
         resize: true,
       },
       modes: {
-        repulse: { distance: 170, duration: 0.4 },
+        repulse: { distance: 150, duration: 0.4 },
       },
     },
     particles: {
-      number: { value: 150, density: { enable: true, area: 800 } },
+      number: { value: 170, density: { enable: true, area: 800 } },
       color: { value: "#FF0000" }, 
       shape: { type: "circle" },
-      opacity: { value: 0.5 },
-      size: { value: { min: 1, max: 5 } },
+      opacity: { value: 0.7 },
+      size: { value: { min: 1, max: 4 } },
       links: {
         enable: true,
-        distance: 250,
+        distance: 270,
         color: "#FF2400", 
         opacity: 0.6,
-        width: 1,
+        width: 0.7,
       },
       move: {
         enable: true,
