@@ -9,6 +9,8 @@
   --link-color: #fafaf9;
   --link-hover-color: #ff0000;
   --link-underline: #ffffff;
+  --bg-pers:#08080b;
+  --b-color:rgba(255, 255, 255, 0.137);
 }
 
 .border-b-custom {
@@ -36,7 +38,7 @@
 .nav a::after {
   content: "";
   position: absolute;
-  bottom: -2px; /* ajuste se precisar */
+  bottom: -2px; 
   left: 50%;
   width: 0;
   height: 2px;
