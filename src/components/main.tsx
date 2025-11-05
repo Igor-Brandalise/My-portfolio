@@ -1,3 +1,5 @@
+import { Footer } from "./footer";
+
 export function Main() {
   return (
     <main className="flex flex-col md:flex-row text-amber-50 z-50 items-center min-h-[115vh] md:min-h-[70vh] ">
@@ -78,17 +80,7 @@ export function Main() {
           />
         </a>
       </section>
-
-      <footer className="-0 blur-custom z-50 w-full bottom-0 flex justify-between p-4 border-t-custom h-16 fixed items-center">
-        <span className="md:ml-4">&copy; Igor Brandalise</span>
-        <span className="md:mr-4">
-          Icons by{" "}
-          <a href="https://icons8.com" target="_blank" className="text-amber-50 hover:text-red-600">
-            {" "}
-            Icons8
-          </a>
-        </span>
-      </footer>
+<Footer />
     </main>
   );
 }
