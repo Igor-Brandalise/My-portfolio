@@ -17,6 +17,10 @@
   border-bottom: 1px solid rgba(252, 252, 252, 0.123);
 }
 
+.border-t-custom {
+  border-top: 1px solid rgba(252, 252, 252, 0.123);
+}
+
 .blur-custom {
   backdrop-filter: blur(6px);
 }
