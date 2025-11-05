@@ -4,12 +4,8 @@ import ParticlesBackground from "./components/ParticlesBackground.js";
 import "./index.css"; 
 
 import { Home } from "./pages/home/home";
+import { About } from "./pages/about/about.js";
 
-// importe outras páginas se tiver
-//import { About } from "./pages/about/about";
-//import { Skills } from "./pages/skills/skills";
-//import { Projects } from "./pages/projects/projects";
-//import { Contact } from "./pages/contact/contact";
 
 export default function App() {
   return (
@@ -19,8 +15,8 @@ export default function App() {
       <Routes>
 
         <Route path="/" element={<Home />} />
-
-        {/*<Route path="/about" element={<About />} /> */}
+        <Route path="/about" element={<About />} />
+         
         {/*<Route path="/skills" element={<Skills />} /> */}
         {/*<Route path="/projects" element={<Projects />} /> */}
         {/*<Route path="/contact" element={<Contact />} /> */}
