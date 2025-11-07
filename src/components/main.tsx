@@ -1,5 +1,3 @@
-import { Footer } from "./footer";
-
 export function Main() {
   return (
     <main className="flex flex-col md:flex-row text-amber-50 z-50 items-center min-h-[115vh] md:min-h-[70vh] ">
@@ -34,7 +32,7 @@ export function Main() {
 
       <section className=" h-auto p-7    md:mt-12 z-50 ">
         <img
-          src="/public/igor.jpeg"
+          src="/igor.jpeg"
           alt="Igor Brandalise"
           className="md:h-[300px] md:w-[300px] rounded-[50%] w-[200px] h-[200px]  "
         />
@@ -43,7 +41,7 @@ export function Main() {
       <section className="transform scale-0 hidden xl:scale-100 lg:bg-(--bg-pers) lg:border border-(--b-color) lg:rounded-[60px] lg:p-2 lg:items-center lg:h-100 lg:flex lg:flex-col lg:w-24 lg:m-4 lg:mt-12 lg:pt-10 lg:ml-30 lg:gap-6 w-40 ">
         <a href="https://github.com/Igor-Brandalise" target="_blank">
           <img
-            src="/public/icons8-github-48.png"
+            src="/icons8-github-48.png"
             alt="github logo"
             height="60px"
             width="60px"
@@ -52,7 +50,7 @@ export function Main() {
 
         <a href="https://instagram.com/igor_brandalise" target="_blank">
           <img
-            src="/public/icons8-instagram-50.png"
+            src="/icons8-instagram-50.png"
             alt="instagram logo"
             height="60px"
             width="60px"
@@ -64,7 +62,7 @@ export function Main() {
           target="_blank"
         >
           <img
-            src="/public/icons8-linkedin-50.png"
+            src="/icons8-linkedin-50.png"
             alt="linkedin logo"
             height="60px"
             width="60px"
@@ -83,7 +81,6 @@ export function Main() {
           />
         </a>
       </section>
-      <Footer />
     </main>
   );
 }
