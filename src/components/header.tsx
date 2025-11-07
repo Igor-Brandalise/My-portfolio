@@ -15,7 +15,7 @@ export function Header() {
       </div>
 
       {/* Desktop nav (mostra só em telas >= 1024px) */}
-      <nav className="hidden lg:flex items-center text-[1rem] gap-10 text-white font-medium lg:mr-28">
+      <nav className="nav hidden lg:flex items-center text-[1rem] gap-10 text-white font-medium lg:mr-28">
         <Link to="/about">About me</Link>
         <Link to="/skills">Skills</Link>
         <Link to="/projects">Projects</Link>
@@ -26,7 +26,7 @@ export function Header() {
       <div className="lg:hidden z-100">
         <button
           onClick={toggleMenu}
-          className="flex flex-col justify-center items-center w-8 h-8 relative focus:outline-none"
+          className=" flex flex-col justify-center items-center w-8 h-8 relative focus:outline-none"
         >
           <span
             className={`block w-7 h-0.5 bg-red-600 rounded transform transition duration-300 ease-in-out ${
@@ -48,7 +48,7 @@ export function Header() {
 
       {/* Menu mobile (abre quando clicar no botão) */}
       <nav
-        className={`lg:hidden absolute top-16 right-4 w-40 bg-black border border-red-600 rounded-[10px] shadow-lg flex flex-col p-4 gap-4 text-white transition-all duration-300 overflow-hidden ${
+        className={`nav lg:hidden absolute top-16 right-4 w-40 bg-black border border-red-600 rounded-[10px] shadow-lg flex flex-col p-4 gap-4 text-white transition-all duration-300 overflow-hidden ${
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
