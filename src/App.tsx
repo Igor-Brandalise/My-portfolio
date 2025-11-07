@@ -4,7 +4,7 @@ import ParticlesBackground from "./components/ParticlesBackground.js";
 import "./index.css"; 
 
 import { Home } from "./pages/home/home";
-import { About } from "./pages/about/about.js";
+import { AboutMe } from "./pages/about/about.js";
 
 
 export default function App() {
@@ -15,7 +15,7 @@ export default function App() {
       <Routes>
 
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<AboutMe />} />
          
         {/*<Route path="/skills" element={<Skills />} /> */}
         {/*<Route path="/projects" element={<Projects />} /> */}
