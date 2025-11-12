@@ -25,7 +25,7 @@ export function Main() {
           className="z-50 w-28 h-10 mt-8 "
         >
           <button className="bg-amber-50 font-bold rounded-lg text-black w-28 h-10 z-50 transition-all duration-200 hover:bg-neutral-400 hover:ring-2 hover:ring-neutral-900 hover:ring-offset-2 ">
-            Donwload CV
+            Download CV
           </button>
         </a>
       </section>
