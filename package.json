@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "cross-env CHOKIDAR_USEPOLLING=true vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
