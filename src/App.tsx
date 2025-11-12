@@ -5,6 +5,7 @@ import "./index.css";
 
 import { Home } from "./pages/home/home";
 import { AboutMe } from "./pages/about/about.js";
+import { Skills } from "./pages/skills/skills.js";
 
 
 export default function App() {
@@ -16,8 +17,8 @@ export default function App() {
 
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutMe />} />
-         
-        {/*<Route path="/skills" element={<Skills />} /> */}
+        <Route path="/skills" element={<Skills />} />
+
         {/*<Route path="/projects" element={<Projects />} /> */}
         {/*<Route path="/contact" element={<Contact />} /> */}
       </Routes>
