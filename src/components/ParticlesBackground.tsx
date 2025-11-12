@@ -14,7 +14,7 @@ export default function ParticlesBackground() {
 
   const options = {
     background: { color: { value: "#08080b" } }, // fundo escuro
-    fpsLimit: 500,
+    fpsLimit: 600,
     interactivity: {
       events: {
         onHover: { enable: true, mode: "repulse" }, // interação com mouse
@@ -25,14 +25,14 @@ export default function ParticlesBackground() {
       },
     },
     particles: {
-      number: { value: 170, density: { enable: true, area: 800 } },
+      number: { value: 160, density: { enable: true, area: 800 } },
       color: { value: "#FF0000" }, 
       shape: { type: "circle" },
       opacity: { value: 0.7 },
       size: { value: { min: 1, max: 4 } },
       links: {
         enable: true,
-        distance: 270,
+        distance: 250,
         color: "#FF2400", 
         opacity: 0.6,
         width: 0.7,
