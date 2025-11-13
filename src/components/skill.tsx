@@ -1,7 +1,7 @@
 export function Skill() {
   return (
-    <main className="flex flex-col relative  lg:ml-15 xl:ml-28 pb-20  ">
-      <h1 className="z-50 text-white mt-2 lg:mt-1 p-[1.8rem] text-[3rem] font-bold flex-wrap">
+    <main className=" z-30 flex flex-col relative  lg:ml-15 xl:ml-28 pb-20  ">
+      <h1 className=" text-white mt-2 lg:mt-1 p-[1.8rem] text-[3rem] font-bold flex-wrap">
         Technologies <span className="text-red-600">&</span> Skills
       </h1>
 

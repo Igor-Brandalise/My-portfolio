@@ -39,7 +39,7 @@ export function Project() {
   ];
   return (
     <main className="flex flex-col  lg:ml-15 xl:ml-28 pl-[1.8rem] mt-10 lg:mt-20">
-      <section className="flex flex-col lg:flex-row lg:justify-between z-50">
+      <section className="flex flex-col lg:flex-row lg:justify-between z-30">
         <h1 className="text-[40px] lg:text-[50px] font-extrabold text-white ">
           <span className="text-red-600">My</span> Projects
         </h1>

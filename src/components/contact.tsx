@@ -1,7 +1,7 @@
 export function Contacts() {
   return (
     <main className="flex justify-center pb-25 mt-20">
-      <ul className=" z-50 flex flex-col gap-10">
+      <ul className=" z-30 flex flex-col gap-10">
         <a href="https://github.com/Igor-Brandalise" target="_blank">
           <li className="card  blur-custom border-red-800 border rounded-[7px] flex justify-center items-center p-4 w-[40vh] h-18 lg:w-[60vh] ">
             <img src="/icons8-github-48.png" alt="" />
