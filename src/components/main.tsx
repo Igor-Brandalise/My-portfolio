@@ -20,7 +20,7 @@ export function Main() {
         </p>
 
         <a
-          href="../../document/Igor-Brandalise-CV.pdf"
+          href="/document/Igor-Brandalise-CV.pdf"
           download
           className="z-50 w-28 h-10 mt-8 "
         >
