@@ -1,29 +1,51 @@
-# 
+# 🌐 Portfólio Pessoal
 
-Bem-vindo ao repositório do meu **portfólio pessoal** — o espaço onde compartilho um pouco da minha trajetória, dos projetos que mais me orgulham e das tecnologias que me inspiram todos os dias.
+Este projeto é o meu **portfólio pessoal**, desenvolvido para apresentar meus principais projetos front-end, minha stack técnica e minha forma de trabalhar com interfaces web modernas.
 
----
-
-## 💡 Sobre o projeto
-
-Este portfólio foi desenvolvido com o objetivo de reunir meus principais trabalhos e mostrar minha evolução como desenvolvedor.  
-Aqui você vai encontrar um pouco da minha história, meus aprendizados e o resultado de horas de curiosidade, pesquisa e código.
-
-## 🛠️ Tecnologias que usei
-
-- ⚛️ **React** — para criar interfaces dinâmicas e componentizadas  
-- 🟦 **TypeScript** — trazendo segurança e escalabilidade ao código  
-- ⚡ **Vite** — para um ambiente de desenvolvimento super rápido  
-- 🎨 **TailwindCSS** — garantindo um layout bonito, responsivo e consistente  
-- 🔄 **React Router** — para navegação fluida entre as seções  
-- 🧹 **ESLint + Prettier** — porque código limpo é essencial  
-
+A aplicação foi construída com foco em **componentização**, **organização de código**, **responsividade** e **experiência do usuário**, servindo também como base para evolução contínua.
 
 ---
 
-## 🚀 Como rodar localmente
+## 🎯 Objetivo do Projeto
 
-Se quiser ver o portfólio rodando na sua máquina:
+Centralizar projetos e informações profissionais em uma aplicação web, permitindo:
+- apresentação clara da stack técnica
+- navegação fluida entre seções
+- visual consistente e responsivo
+- fácil manutenção e escalabilidade do código
+
+---
+
+## 🚀 Funcionalidades
+
+- Página inicial com apresentação profissional  
+- Seção de projetos com descrição e links  
+- Navegação entre páginas utilizando **React Router**  
+- Layout responsivo para desktop e dispositivos móveis  
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **React**
+- **TypeScript**
+- **Vite**
+- **Tailwind CSS**
+- **React Router**
+- **ESLint**
+- **Prettier**
+
+---
+
+## 🧩 Estrutura do Projeto
+
+- Componentes reutilizáveis para UI  
+- Separação clara entre páginas e componentes  
+- Padronização de código com linting e formatação automática  
+
+---
+
+## 🚀 Como Rodar Localmente
 
 ```bash
 # Clone o repositório
@@ -35,7 +57,5 @@ cd My-portfolio
 # Instale as dependências
 npm install
 
-# Rode o projeto
+# Inicie o servidor de desenvolvimento
 npm run dev
-
-
