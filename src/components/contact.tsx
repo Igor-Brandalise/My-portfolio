@@ -28,7 +28,7 @@ export function Contacts() {
             <img src="/icons8-linkedin-50.png" alt="" />
           </li>
         </a>
-        <a href="/public/document/Igor Brandalise - CV.pdf" download>
+        <a href="/document/Igor Brandalise - CV.pdf" download>
           <li className="card  blur-custom border-red-800 border rounded-[7px] flex justify-center items-center p-4 w-[40vh] h-18 lg:w-[60vh]  text-amber-50 font-extrabold text-[20px]">
             Download Resume
           </li>
