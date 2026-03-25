@@ -2,7 +2,7 @@ export function Project() {
   const projects = [
     {
       name: "Portfólio",
-      url: "https://my-portfolio-jet-one-16.vercel.app/",
+      url: "https://my-portfolio-flame-eight-82.vercel.app/",
       img: "/projects/icons8-portfólio-50.png",
       alt: "portfólio logo",
     },
