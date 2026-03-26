@@ -6,49 +6,55 @@ export function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="flex justify-between items-center p-4 min-w-full h-16 relative z-50 border-b-custom blur-custom">
+    <header
+      className="header-reveal fixed top-6 left-1/2 w-[95%] lg:w-[65%] 
+               flex justify-between items-center px-2 py-1  mt-4 rounded-[30px]  h-16 z-50 border-custom  bg-[#121212]/90  "
+    >
       {/* Logo */}
-      <div className="items-center text-white pl-3 lg:ml-15 xl:ml-28 lg:text-[1.7rem] text-[1.4rem] font-bold z-30">
+      <div className="items-center text-white pl-4 lg:text-[1.4rem] text-[1.2rem] font-bold z-30 ">
         <Link to="/">
-          &lt;Igor <span className="text-red-600">Brandalise/&gt;</span>
+          &lt;Igor <span className="text-[#ff3b3b]">Brandalise/&gt;</span>
         </Link>
       </div>
 
-      {/* Desktop nav (mostra só em telas >= 1024px) */}
-      <nav className="nav hidden lg:flex items-center text-[1rem] gap-10 text-white font-medium lg:mr-28">
+      {/* Desktop nav */}
+      <nav className="nav hidden xl:flex items-center text-[1rem] gap-5 text-white font-medium xl:mr-8">
         <Link to="/about">About me</Link>
+        <span>|</span>
         <Link to="/skills">Skills</Link>
+        <span>|</span>
         <Link to="/projects">Projects</Link>
+        <span>|</span>
         <Link to="/contact">Contact</Link>
       </nav>
 
-      {/* Botão hamburguer (mostra abaixo de 1024px) */}
-      <div className="lg:hidden z-100">
+      {/* Botão hamburguer  */}
+      <div className="xl:hidden z-100 pr-4">
         <button
           onClick={toggleMenu}
           className=" flex flex-col justify-center items-center w-8 h-8 relative focus:outline-none"
         >
           <span
-            className={`block w-7 h-0.5 bg-red-600 rounded transform transition duration-300 ease-in-out ${
+            className={`block w-7 h-0.5 bg-[#ff3b3b] rounded transform transition duration-300 ease-in-out ${
               isOpen ? "rotate-45 absolute top-1/2 -translate-y-1/2" : ""
             }`}
           />
           <span
-            className={`block w-7 h-0.5 bg-red-600 rounded my-1 transition duration-300 ease-in-out ${
+            className={`block w-7 h-0.5 bg-[#ff3b3b] rounded my-1 transition duration-300 ease-in-out ${
               isOpen ? "opacity-0" : ""
             }`}
           />
           <span
-            className={`block w-7 h-0.5 bg-red-600 rounded transform transition duration-300 ease-in-out ${
+            className={`block w-7 h-0.5 bg-[#ff3b3b] rounded transform transition duration-300 ease-in-out ${
               isOpen ? "-rotate-45 absolute top-1/2 -translate-y-1/2" : ""
             }`}
           />
         </button>
       </div>
 
-      {/* Menu mobile (abre quando clicar no botão) */}
+      {/* Menu mobile */}
       <nav
-        className={`nav lg:hidden absolute top-16 right-4 w-40 bg-black border border-red-600 rounded-[10px] shadow-lg flex flex-col p-4 gap-4 text-white transition-all duration-300 overflow-hidden ${
+        className={`nav xl:hidden absolute top-16 right-4 w-40 bg-[#121212] border border-[#ff3b3b] rounded-[10px] shadow-lg flex flex-col p-4 gap-4 text-white transition-all duration-300 overflow-hidden ${
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
