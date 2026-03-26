@@ -1,7 +1,6 @@
-
 import { Routes, Route } from "react-router-dom";
 import ParticlesBackground from "./components/ParticlesBackground.js";
-import "./index.css"; 
+import "./index.css";
 
 import { Home } from "./pages/home/home";
 import { AboutMe } from "./pages/about/about.js";
@@ -9,19 +8,23 @@ import { Skills } from "./pages/skills/skills.js";
 import { Projects } from "./pages/projects/projects.js";
 import { Contact } from "./pages/contact/contact.js";
 
-
 export default function App() {
   return (
-    <div style={{ position: "relative", minHeight: "100vh", background: "#0b1220" }}>
+    <div
+      style={{
+        position: "relative",
+        minHeight: "100vh",
+        background: "#0b1220",
+      }}
+    >
       <ParticlesBackground />
-      
-      <Routes>
 
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutMe />} />
         <Route path="/skills" element={<Skills />} />
-        <Route path="/projects" element={<Projects />} /> 
-        <Route path="/contact" element={<Contact />} /> 
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
   );
