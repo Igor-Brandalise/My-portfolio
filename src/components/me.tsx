@@ -1,94 +1,105 @@
 export function About() {
   return (
-    <main className="flex flex-col gap-16 px-6 py-10 lg:ml-15 xl:ml-28 lg:max-w-[70%] md:mr-10 mx-auto text-white relative z-30 pb-30">
+    <main className="reveal relative mx-auto w-[90%] lg:w-[60%] mt-40 flex flex-col text-[#e5e5e5] z-30 pb-30 ">
       <section className="space-y-6">
         <h1 className="text-5xl font-bold">
           About{" "}
-          <span id="me" className="text-red-600">
+          <span id="me" className="text-[#ff3b3b]">
             me
           </span>
         </h1>
-        <p className="text-lg leading-6">
-          Olá, meu nome é Igor Brandalise, e sou apaixonado pelo mundo da
-          tecnologia e da programação. Tenho 18 anos e comecei minha jornada no
-          desenvolvimento web em 2023. Desde então, venho me dedicando a
-          aprender e a explorar diferentes ferramentas e linguagens, sempre
-          buscando transformar ideias em soluções práticas e funcionais. Meu
-          objetivo atual é conquistar meu primeiro emprego na área, onde possa
-          aplicar meus conhecimentos, aprender com profissionais experientes e
-          crescer como desenvolvedor. No futuro, almejo me tornar um Tech Lead,
-          liderando equipes e contribuindo para projetos inovadores que façam a
-          diferença.
-        </p>
+
+        <div className="flex flex-col text-lg gap-5  ">
+          <p className="mt-3">
+            Hello, my name is Igor Brandalise, and I'm passionate about the
+            world of technology and programming. I'm 18 years old and started my
+            web development journey in 2023.
+          </p>
+          <p>
+            Since then, I've dedicated myself to learning and exploring
+            different tools and languages, always seeking to transform ideas
+            into practical and functional solutions. Currently, I’m also
+            studying Software Engineering at university while continuing to
+            deepen my knowledge in web development.
+          </p>
+          <p>
+            My current goal is to get my first job in the field, where I can
+            apply my knowledge, learn from experienced professionals, and grow
+            as a developer.
+          </p>
+          <p>
+            In the future, I aspire to become a Tech Lead, leading teams and
+            contributing to innovative projects that make a difference.
+          </p>
+        </div>
       </section>
 
-      <section id="curso" className="space-y-8">
+      <section id="curso" className="mt-10">
         <h2 className="text-4xl font-semibold border-b-2 border-zinc-400 inline-block pb-1">
-          Cursos
+          Courses
         </h2>
 
-        <div className="space-y-2">
-          <h3 className="flex items-center gap-2 text-2xl lg:text-3xl font-semibold relative before:content-['-'] before:text-5xl before:text-[#fafaf9] before:mr-2">
+        <div className="space-y-2 mt-10">
+          <h3 className="flex items-center gap-2 text-2xl lg:text-3xl font-semibold relative ">
             <img
               src="/otaviomirandalogo-2.webp"
               alt="Logo"
-              className="ml-[0.6em] w-10 h-10 rounded"
+              className=" w-10 h-10 rounded"
             />
-            Curso de JavaScript e TypeScript (Fullstack)
+            Course of JavaScript and TypeScript (Fullstack)
           </h3>
-          <h4 className="text-lg font-bold text-zinc-200">
-            Luiz Otávio Miranda
-          </h4>
-          <p className="leading-6 text-base">
-            O Curso de JavaScript e TypeScript do Básico ao Avançado oferece um
-            aprendizado sobre o desenvolvimento full stack. O curso ensina
-            JavaScript moderno (ES6+), com aplicações em frameworks e
-            bibliotecas populares como React, Redux, Node.js, Express, MongoDB e
-            MySQL/MariaDB. Inclui também o aprendizado de TypeScript, segurança,
-            API REST, Testes com Jest e Padrões de Projeto. Os alunos
-            desenvolvem projetos práticos como um CRUD, sistemas de login e um
-            blog utilizando NextJS e Strapi, além de aprender sobre deploy,
-            infraestrutura e bancos de dados.
+          <h4 className="text-sm font-bold text-[#ff3b3b]">Luiz Otávio Miranda</h4>
+          <p className="leading-6 text-base text-[#FAFAF9]">
+            The Basic to Advanced JavaScript and TypeScript Course offers a
+            comprehensive learning experience in full-stack development. The
+            course teaches modern JavaScript (ES6+), with applications in
+            popular frameworks and libraries such as React, Redux, Node.js,
+            Express, MongoDB, and MySQL/MariaDB. It also includes learning
+            TypeScript, security, REST API, Jest testing, and design patterns.
+            Students develop practical projects such as a CRUD application,
+            login systems, and a blog using NextJS and Strapi, in addition to
+            learning about deployment, infrastructure, and databases.
           </p>
         </div>
 
-        <div className="space-y-2">
-          <h3 className="flex items-center gap-2 text-2xl lg:text-3xl font-semibold relative before:content-['-'] before:text-5xl before:text-[#fafaf9] before:mr-2">
+        <div className="space-y-2 mt-10">
+          <h3 className="flex items-center gap-2 text-2xl lg:text-3xl font-semibold relative ">
             <img
               src="/cursoemvideo.webp"
               alt="Logo"
-              className="ml-[0.6em] w-10 h-10 rounded"
+              className=" w-10 h-10 rounded"
             />
-            Curso de HTML e CSS
+            Course of HTML and CSS
           </h3>
-          <h4 className="text-lg font-bold text-zinc-200">Curso em Vídeo</h4>
-          <p className="leading-6 text-base">
-            O Curso de HTML e CSS, do Curso em Vídeo, oferece uma abordagem
-            prática e detalhada para quem quer aprender a desenvolver páginas
-            web. O curso cobre a estruturação de conteúdo com HTML, como usar
-            tags semânticas e criar links, listas e formulários, além de
-            explorar o CSS para estilização, trabalhando com cores, fontes,
-            espaçamentos e layouts.
+          <h4 className="text-sm font-bold text-[#ff3b3b]">Curso em Vídeo</h4>
+          <p className="leading-6 text-base text-[#FAFAF9]">
+            The Course of HTML and CSS, from Curso em Vídeo, offers a practical
+            and detailed approach for those who want to learn how to develop web
+            pages. The course covers the structuring of content with HTML, how
+            to use semantic tags and create links, lists and forms, as well as
+            exploring CSS for styling, working with colors, fonts, spacing and
+            layouts.
           </p>
         </div>
 
-        <div className="space-y-2">
-          <h3 className="flex items-center gap-2 text-2xl lg:text-3xl font-semibold relative before:content-['-'] before:text-5xl before:text-[#fafaf9] before:mr-2">
+        <div className="space-y-2 mt-10">
+          <h3 className="flex items-center gap-2 text-2xl lg:text-3xl font-semibold relative ">
             <img
               src="/cursoemvideo.webp"
               alt="Logo"
-              className="ml-[0.6em] w-10 h-10 rounded"
+              className=" w-10 h-10 rounded"
             />
-            Curso de JavaScript
+            Course of JavaScript
           </h3>
-          <h4 className="text-lg font-bold text-zinc-200">Curso em Vídeo</h4>
-          <p className="leading-6 text-base">
-            Um curso notável que concluí foi o curso de Javascript ministrado
-            por Gustavo Guanabara, instrutor experiente e renomado na área,
-            conhecido por sua incrível metodologia de ensino. Este curso me
-            proporcionou uma compreensão abrangente de Javascript, que também
-            abordou lógica de programação, ajudando-me a desenvolver sites
-            dinâmicos e interativos.
+
+          <h4 className="text-sm font-bold text-[#ff3b3b]">Curso em Vídeo</h4>
+          <p className="leading-6 text-base text-[#FAFAF9]">
+            A remarkable course I completed was the Javascript course taught by
+            Gustavo Guanabara, an experienced and renowned instructor in the
+            field, known for his incredible teaching methodology. This course
+            provided me with a comprehensive understanding of Javascript, which
+            also covered programming logic, helping me to develop dynamic and
+            interactive websites.
           </p>
         </div>
       </section>
