@@ -12,7 +12,7 @@ export default function ParticlesBackground() {
   }, []);
 
   const options = {
-    background: { color: { value: "#08080b" } },
+    background: { color: { value: "#1A1A1A" } },
     fpsLimit: 120,
     interactivity: {
       events: {
@@ -24,16 +24,16 @@ export default function ParticlesBackground() {
       },
     },
     particles: {
-      number: { value: 160, density: { enable: true, area: 800 } },
-      color: { value: "#FF0000" },
+      number: { value: 130, density: { enable: true, area: 800 } },
+      color: { value: "#ffffff" },
       shape: { type: "circle" },
-      opacity: { value: 0.7 },
-      size: { value: { min: 1, max: 4 } },
+      opacity: { value: 0.3 },
+      size: { value: 0 },
       links: {
         enable: true,
         distance: 250,
-        color: "#FF2400",
-        opacity: 0.6,
+        color: "#ffffff",
+        opacity: 0.5,
         width: 0.7,
       },
       move: {
