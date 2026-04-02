@@ -16,7 +16,7 @@ export function Contacts() {
           <li className="bg-[#121212]/40 backdrop-blur-md border border-white/5 h-36 w-36 md:h-40 md:w-40 flex flex-col items-center justify-center rounded-[20px] transition-all duration-300 group-hover:border-[#ff3b3b]/50 group-hover:-translate-y-2 group-hover:shadow-[0_10px_30px_rgba(255,59,59,0.15)]">
             <img
               src="/icons8-github-64.png"
-              alt=""
+              alt="Github logo"
               className="w-12 h-12 md:w-16 md:h-16 grayscale group-hover:grayscale-0 transition-all duration-500"
             />
             <p className="text-[#FAFAF9] text-sm md:text-md mt-4 font-medium opacity-70 group-hover:opacity-100">
@@ -33,7 +33,7 @@ export function Contacts() {
           <li className="bg-[#121212]/40 backdrop-blur-md border border-white/5 h-36 w-36 md:h-40 md:w-40 flex flex-col items-center justify-center rounded-[20px] transition-all duration-300 group-hover:border-[#ff3b3b]/50 group-hover:-translate-y-2 group-hover:shadow-[0_10px_30px_rgba(255,59,59,0.15)]">
             <img
               src="/icons8-gmail-novo-64.png"
-              alt=""
+              alt="Gmail logo"
               className="w-12 h-12 md:w-16 md:h-16 grayscale group-hover:grayscale-0 transition-all duration-500"
             />
             <p className="text-[#FAFAF9] text-sm md:text-md mt-4 font-medium opacity-70 group-hover:opacity-100">
@@ -50,7 +50,7 @@ export function Contacts() {
           <li className="bg-[#121212]/40 backdrop-blur-md border border-white/5 h-36 w-36 md:h-40 md:w-40 flex flex-col items-center justify-center rounded-[20px] transition-all duration-300 group-hover:border-[#ff3b3b]/50 group-hover:-translate-y-2 group-hover:shadow-[0_10px_30px_rgba(255,59,59,0.15)]">
             <img
               src="/icons8-linkedin-64.png"
-              alt=""
+              alt="LinkedIn logo"
               className="w-12 h-12 md:w-16 md:h-16 grayscale group-hover:grayscale-0 transition-all duration-500"
             />
             <p className="text-[#FAFAF9] text-sm md:text-md mt-4 font-medium opacity-70 group-hover:opacity-100">
@@ -67,7 +67,7 @@ export function Contacts() {
           <li className="bg-[#121212]/40 backdrop-blur-md border border-white/5 h-36 w-36 md:h-40 md:w-40 flex flex-col items-center justify-center rounded-[20px] transition-all duration-300 group-hover:border-[#ff3b3b]/50 group-hover:-translate-y-2 group-hover:shadow-[0_10px_30px_rgba(255,59,59,0.15)]">
             <img
               src="/icons8-logo-discord-64.png"
-              alt=""
+              alt="Discord logo"
               className="w-12 h-12 md:w-16 md:h-16 grayscale group-hover:grayscale-0 transition-all duration-500"
             />
             <p className="text-[#FAFAF9] text-sm md:text-md mt-4 font-medium opacity-70 group-hover:opacity-100">
@@ -80,7 +80,7 @@ export function Contacts() {
           <li className="bg-[#121212]/40 backdrop-blur-md border border-white/5 h-36 w-36 md:h-40 md:w-40 flex flex-col items-center justify-center rounded-[20px] transition-all duration-300 group-hover:border-[#ff3b3b]/50 group-hover:-translate-y-2 group-hover:shadow-[0_10px_30px_rgba(255,59,59,0.15)]">
             <img
               src="/icons8-currículo-64.png"
-              alt=""
+              alt="Resume"
               className="w-12 h-12 md:w-16 md:h-16 grayscale group-hover:grayscale-0 transition-all duration-500"
             />
             <p className="text-[#FAFAF9] text-sm md:text-md mt-4 font-medium opacity-70 group-hover:opacity-100">

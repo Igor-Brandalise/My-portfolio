@@ -43,7 +43,7 @@ export function About() {
           <h3 className="flex items-center gap-2 text-2xl lg:text-3xl font-semibold relative ">
             <img
               src="/otaviomirandalogo-2.webp"
-              alt="Logo"
+              alt="Luiz Otávio Miranda Logo"
               className=" w-10 h-10 rounded"
             />
             Course of JavaScript and TypeScript (Fullstack)
@@ -66,7 +66,7 @@ export function About() {
           <h3 className="flex items-center gap-2 text-2xl lg:text-3xl font-semibold relative ">
             <img
               src="/cursoemvideo.webp"
-              alt="Logo"
+              alt="Curso em Vídeo Logo"
               className=" w-10 h-10 rounded"
             />
             Course of HTML and CSS
@@ -86,7 +86,7 @@ export function About() {
           <h3 className="flex items-center gap-2 text-2xl lg:text-3xl font-semibold relative ">
             <img
               src="/cursoemvideo.webp"
-              alt="Logo"
+              alt="Curso em Vídeo Logo"
               className=" w-10 h-10 rounded"
             />
             Course of JavaScript
